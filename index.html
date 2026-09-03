@@ -1135,14 +1135,14 @@
                 <img src="assets/logo-cmjn.jpg" alt="Prestinvest SA">
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about" class="nav-link" data-en="About" data-fr="A propos" data-de="&Uuml;ber uns">About</a></li>
-                <li><a href="#team" class="nav-link" data-en="Team" data-fr="Equipe" data-de="Team">Team</a></li>
-                <li><a href="#services" class="nav-link" data-en="Services" data-fr="Services" data-de="Dienstleistungen">Services</a></li>
-                <li><a href="#track-record" class="nav-link" data-en="Track Record" data-fr="Performance" data-de="Erfolgsnachweis">Track
+                <li style="display:none"><a href="#about" class="nav-link" data-en="About" data-fr="A propos" data-de="&Uuml;ber uns">About</a></li>
+                <li style="display:none"><a href="#team" class="nav-link" data-en="Team" data-fr="Equipe" data-de="Team">Team</a></li>
+                <li style="display:none"><a href="#services" class="nav-link" data-en="Services" data-fr="Services" data-de="Dienstleistungen">Services</a></li>
+                <li style="display:none"><a href="#track-record" class="nav-link" data-en="Track Record" data-fr="Performance" data-de="Erfolgsnachweis">Track
                         Record</a></li>
-                <li><a href="#technology" class="nav-link" data-en="Technology" data-fr="Technologie" data-de="Technologie">Technology</a>
+                <li style="display:none"><a href="#technology" class="nav-link" data-en="Technology" data-fr="Technologie" data-de="Technologie">Technology</a>
                 </li>
-                <li><a href="#insights" class="nav-link" data-en="Insights" data-fr="Publications" data-de="Publikationen">Insights</a></li>
+                <li style="display:none"><a href="#insights" class="nav-link" data-en="Insights" data-fr="Publications" data-de="Publikationen">Insights</a></li>
                 <li><a href="#contact" class="nav-link" data-en="Contact" data-fr="Contact" data-de="Kontakt">Contact</a></li>
                 <li>
                     <div class="lang-toggle">
@@ -1177,7 +1177,7 @@
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-gold" data-en="Get in Touch" data-fr="Nous contacter" data-de="Kontaktieren Sie uns">Get in
                         Touch</a>
-                    <a href="#services" class="btn btn-outline" data-en="Our Services" data-fr="Nos services" data-de="Unsere Dienstleistungen">Our
+                    <a href="#services" class="btn btn-outline" data-en="Our Services" data-fr="Nos services" data-de="Unsere Dienstleistungen" style="display:none">Our
                         Services</a>
                 </div>
             </div>
@@ -1204,7 +1204,7 @@
     </section>
 
     <!-- ===== ABOUT ===== -->
-    <section id="about" class="bg-cream">
+    <section id="about" class="bg-cream" style="display:none">
         <div class="container">
             <div class="about-grid fade-in">
                 <div class="about-image">
@@ -1267,7 +1267,7 @@
     </section>
 
     <!-- ===== TEAM ===== -->
-    <section id="team">
+    <section id="team" style="display:none">
         <div class="container">
             <div class="section-label" data-en="Our Team" data-fr="Notre &eacute;quipe" data-de="Unser Team">Our Team</div>
             <h2 class="section-title" data-en="People You Can Trust" data-fr="Des personnes de confiance" data-de="Menschen, denen Sie vertrauen k&ouml;nnen">People You Can
@@ -1409,7 +1409,7 @@
     </section>
 
     <!-- ===== SERVICES ===== -->
-    <section id="services" class="bg-dark">
+    <section id="services" class="bg-dark" style="display:none">
         <div class="container">
             <div class="section-label" data-en="Our Services" data-fr="Nos services" data-de="Unsere Dienstleistungen">Our Services</div>
             <h2 class="section-title" data-en="Comprehensive Wealth Solutions"
@@ -1545,7 +1545,7 @@
     </section>
 
     <!-- ===== TRACK RECORD ===== -->
-    <section id="track-record">
+    <section id="track-record" style="display:none">
         <div class="container">
             <div class="section-label" data-en="Track Record" data-fr="Performance" data-de="Erfolgsnachweis">Track Record</div>
             <h2 class="section-title" data-en="Proven Performance" data-fr="Performance prouv&eacute;e" data-de="Bew&auml;hrte Leistung">Proven
@@ -1653,7 +1653,7 @@
     </section>
 
     <!-- ===== TECHNOLOGY ===== -->
-    <section id="technology" class="bg-cream">
+    <section id="technology" class="bg-cream" style="display:none">
         <div class="container">
             <div class="section-label" data-en="Technology" data-fr="Technologie" data-de="Technologie">Technology</div>
             <h2 class="section-title" data-en="Where Swiss Banking Meets Innovation"
@@ -1711,7 +1711,7 @@
     </section>
 
     <!-- ===== INSIGHTS ===== -->
-    <section id="insights" class="bg-dark">
+    <section id="insights" class="bg-dark" style="display:none">
         <div class="container">
             <div class="section-label" data-en="Insights" data-fr="Publications" data-de="Publikationen">Insights</div>
             <h2 class="section-title" data-en="Market Intelligence" data-fr="Intelligence de march&eacute;" data-de="Marktintelligenz">Market
@@ -1877,15 +1877,21 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="assets/logo-cmjn.jpg" alt="Prestinvest SA"
-                        style="height:45px;max-width:200px;object-fit:contain;mix-blend-mode:screen;margin-bottom:0.5rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 213 45" style="height:45px;display:block;margin-bottom:0.5rem" aria-label="Prestinvest SA">
+                        <!-- white square, upper-left -->
+                        <rect x="89" y="1" width="21" height="21" fill="white"/>
+                        <!-- gold square, lower-right -->
+                        <rect x="103" y="9" width="16" height="17" fill="#B1976B"/>
+                        <!-- wordmark -->
+                        <text x="106.5" y="43" font-family="Georgia,'Times New Roman',serif" font-size="12" fill="#B1976B" text-anchor="middle" textLength="205" lengthAdjust="spacing">PRESTINVEST</text>
+                    </svg>
                     <p data-en="Geneva-based FINMA-regulated Multi-Family Office. Engineering your investments since 2006 with Swiss precision and quantitative innovation."
                         data-fr="Multi-Family Office genevois r&eacute;gul&eacute; par la FINMA. L'ing&eacute;nierie de vos investissements depuis 2006 avec la pr&eacute;cision suisse et l'innovation quantitative."
                         data-de="FINMA-reguliertes Multi-Family Office in Genf. Engineering Ihrer Anlagen seit 2006 mit Schweizer Pr&auml;zision und quantitativer Innovation.">
                         Geneva-based FINMA-regulated Multi-Family Office. Engineering your investments since 2006 with
                         Swiss precision and quantitative innovation.</p>
                 </div>
-                <div>
+                <div style="display:none">
                     <h4 data-en="Services" data-fr="Services" data-de="Dienstleistungen">Services</h4>
                     <ul class="footer-links">
                         <li><a href="#services" data-en="Private Banking" data-fr="Banque Priv&eacute;e" data-de="Private Banking">Private
@@ -1897,7 +1903,7 @@
                                 data-fr="Produits structur&eacute;s" data-de="Strukturierte Produkte">Structured Products</a></li>
                     </ul>
                 </div>
-                <div>
+                <div style="display:none">
                     <h4 data-en="Company" data-fr="Soci&eacute;t&eacute;" data-de="Unternehmen">Company</h4>
                     <ul class="footer-links">
                         <li><a href="#about" data-en="About Us" data-fr="A propos" data-de="&Uuml;ber uns">About Us</a></li>
@@ -1906,7 +1912,7 @@
                         <li><a href="#contact" data-en="Contact" data-fr="Contact" data-de="Kontakt">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <div style="display:none">
                     <h4 data-en="Legal" data-fr="Juridique" data-de="Rechtliches">Legal</h4>
                     <ul class="footer-links">
                         <li><a href="#" data-en="Privacy Policy" data-fr="Politique de confidentialit&eacute;" data-de="Datenschutzrichtlinie">Privacy
@@ -1992,6 +1998,51 @@
                 document.getElementById('navLinks').classList.remove('open');
             });
         });
+    </script>
+
+    <!-- Internal preview toggle -->
+    <div id="previewToggle" style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999">
+        <button onclick="toggleFullVersion()" id="versionToggleBtn" style="
+            background:#B1976B;color:#1A1A2E;border:none;
+            padding:0.6rem 1.4rem;border-radius:2rem;
+            font-family:inherit;font-size:0.78rem;font-weight:700;
+            letter-spacing:0.06em;cursor:pointer;
+            box-shadow:0 4px 16px rgba(0,0,0,0.35);
+            text-transform:uppercase;
+        ">Show full version</button>
+    </div>
+
+    <script>
+        var _fullVersion = false;
+        function toggleFullVersion() {
+            _fullVersion = !_fullVersion;
+
+            // Main sections
+            ['about','team','services','track-record','technology','insights'].forEach(function(id) {
+                var el = document.getElementById(id);
+                if (el) el.style.display = _fullVersion ? '' : 'none';
+            });
+
+            // Nav links (all except Contact)
+            document.querySelectorAll('#navLinks li').forEach(function(li) {
+                var a = li.querySelector('a');
+                if (a && a.getAttribute('href') !== '#contact') {
+                    li.style.display = _fullVersion ? '' : 'none';
+                }
+            });
+
+            // Our Services hero button
+            var svcBtn = document.querySelector('a.btn[href="#services"]');
+            if (svcBtn) svcBtn.style.display = _fullVersion ? '' : 'none';
+
+            // Footer columns (Services, Company, Legal)
+            document.querySelectorAll('.footer-grid > div:not(.footer-brand)').forEach(function(col) {
+                col.style.display = _fullVersion ? '' : 'none';
+            });
+
+            document.getElementById('versionToggleBtn').textContent =
+                _fullVersion ? 'Hide full version' : 'Show full version';
+        }
     </script>
 
 </body>
